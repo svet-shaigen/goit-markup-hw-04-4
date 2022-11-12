@@ -14,6 +14,7 @@
     --secondary-bg-color: #2F303A;
     --team-bg-color: #F5F4FA;
     --soc-bg-color: #AFB1B8;
+    --soc-bg-icon: rgba(255, 255, 255, 0.1);
 
     --border-project-color: #EEEEEE;
     --border-header-color: #ECECEC;
@@ -235,6 +236,19 @@
 
         /* -----------------FEATURES---------------- */
 
+        .features-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 270px;
+          height: 120px;
+          gap: 30px;
+          margin-bottom: 30px;
+  
+          background-color: var(--team-bg-color);
+          border-radius: 4px;
+        }
+
 
         .features-title {
         line-height: calc(16 / 14);
@@ -331,7 +345,7 @@
         background-color: var(--team-bg-color);
        }
 
-       .social-item {
+       .team-social-item {
         width: 44px;
         height: 44px;
        }
@@ -367,6 +381,50 @@
         fill: var(--primary-bg-color);
        }
 
+
+     /* -----------------CUSTOMERS---------------- */
+
+
+     .customers-title {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      text-align: center;
+
+      margin-bottom: 50px;
+     }
+
+     .customers-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 92px;
+
+      border: 1px solid var(--soc-bg-color);
+      border-radius: 4px;
+     }
+
+
+     .customers-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+     }
+
+     .customers-icon {
+      fill: var(--soc-bg-color);
+     }
+
+     .customers-link:hover,
+     .customers-link:focus {
+      border-color: var(--accent-color);
+     }
+
+     .customers-link:hover .customers-icon,
+     .customers-link:focus .customers-icon {
+      fill: var(--accent-color);
+     }
+
        
     /* -----------------FOOTER---------------- */
 
@@ -398,7 +456,6 @@
     }
 
     
-
     .footer-contact {
      color: var(--contact-text-color);
     }
@@ -408,6 +465,45 @@
     .footer-contact:focus {
      color: var(--accent-color);
     }
+
+    .footer-soc-text {
+      line-height: calc(16 / 14);
+      text-transform: uppercase;
+
+      color: var(--primary-bg-color)
+
+    }
+
+    footer .container{
+      display: flex;
+     
+    }
+
+
+    .footer-soc-list {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-soc-icon {
+      fill: var(--primary-bg-color);
+    }
+
+    .footer-soc-link {
+      
+      background-color: var(--soc-bg-icon);
+    }
+
+    .footer-soc-item {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--soc-bg-icon);
+    }
+
+    
+   
+   
 
 
 
