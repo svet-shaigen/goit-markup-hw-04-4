@@ -305,7 +305,6 @@
        /* -----------------TEAM---------------- */
 
        .team {
-        background-color: var(--team-bg-color);
         text-align: center;
          }
 
@@ -372,25 +371,24 @@
         justify-content: center;
         width: 44px;
         height: 44px;
-
+        color: var(--primary-text-color);
         border-radius: 50%;
-        background-color: var(--primary-bg-color);
+        
         }
 
        .team-social-icon {
-        fill: var(--soc-bg-color);
+        fill: currentColor;
        }
 
        .team-social-link:hover,
        .team-social-link:focus {
         background-color: var(--accent-color);
        }
+       
 
-       .team-social-link:hover .team-social-icon,
-       .team-social-link:focus .team-social-icon {
-        fill: var(--primary-bg-color);
+       .team-subtitle {
+        background-color: var(--primary-bg-color);
        }
-
 
      /* -----------------CUSTOMERS---------------- */
 
