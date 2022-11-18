@@ -383,6 +383,7 @@
        .team-social-link:hover,
        .team-social-link:focus {
         background-color: var(--accent-color);
+        color: var(--primary-bg-color);
        }
        
 
